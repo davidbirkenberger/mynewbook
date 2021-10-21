@@ -1,0 +1,1425 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&lt;no title&gt; &#8212; David`s Sample Book</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">David`s Sample Book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown.html">
+   Markdown Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks.html">
+   Content with notebooks
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/poems.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fpoems.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/poems.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="ne">C</span>:\Users\DAVIDB~1\AppData\Local\Temp/ipykernel_13468/2035458946.py in &lt;module&gt;
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;K:\python\poems\POetryFoundationData.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Title</th>
+      <th>Poem</th>
+      <th>Poet</th>
+      <th>Tags</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>\r\r\n                    Objects Used to Prop...</td>
+      <td>\r\r\nDog bone, stapler,\r\r\ncribbage board, ...</td>
+      <td>Michelle Menting</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>\r\r\n                    The New Church\r\r\n...</td>
+      <td>\r\r\nThe old cupola glinted above the clouds,...</td>
+      <td>Lucia Cherciu</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>\r\r\n                    Look for Me\r\r\n   ...</td>
+      <td>\r\r\nLook for me under the hood\r\r\nof that ...</td>
+      <td>Ted Kooser</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>\r\r\n                    Wild Life\r\r\n     ...</td>
+      <td>\r\r\nBehind the silo, the Mother Rabbit\r\r\n...</td>
+      <td>Grace Cavalieri</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>\r\r\n                    Umbrella\r\r\n      ...</td>
+      <td>\r\r\nWhen I push your button\r\r\nyou fly off...</td>
+      <td>Connie Wanek</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Poets</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Poet&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
+<span class="n">Poets</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Michelle Menting&#39;,
+ &#39;Lucia Cherciu&#39;,
+ &#39;Ted Kooser&#39;,
+ &#39;Grace Cavalieri&#39;,
+ &#39;Connie Wanek&#39;,
+ &quot;January Gill O&#39;Neil&quot;,
+ &#39;Joy Harjo&#39;,
+ &#39;Joy Harjo&#39;,
+ &#39;John Ashbery&#39;,
+ &#39;Simone White&#39;,
+ &#39;Heid E. Erdrich&#39;,
+ &#39;Sarah White&#39;,
+ &#39;Judith Harris&#39;,
+ &#39;Kelly Madigan&#39;,
+ &#39;Cathryn Essinger&#39;,
+ &#39;P. Ivan Young&#39;,
+ &#39;Truong Tran&#39;,
+ &#39;Truong Tran&#39;,
+ &#39;Debora Greger&#39;,
+ &#39;Debora Greger&#39;,
+ &#39;James Tate&#39;,
+ &#39;Barbara Ras&#39;,
+ &#39;Barbara Ras&#39;,
+ &#39;Barbara Ras&#39;,
+ &#39;Eugene Gloria&#39;,
+ &#39;Eugene Gloria&#39;,
+ &#39;Michael Gessner&#39;,
+ &#39;Michael Gessner&#39;,
+ &#39;Michael Gessner&#39;,
+ &#39;Michael Gessner&#39;,
+ &#39;Indran Amirthanayagam&#39;,
+ &#39;Indran Amirthanayagam&#39;,
+ &#39;Indran Amirthanayagam&#39;,
+ &#39;Indran Amirthanayagam&#39;,
+ &#39;Indran Amirthanayagam&#39;,
+ &#39;Tao Lin&#39;,
+ &#39;Tao Lin&#39;,
+ &#39;Tao Lin&#39;,
+ &#39;Margarita Engle&#39;,
+ &#39;Margarita Engle&#39;,
+ &#39;Margarita Engle&#39;,
+ &#39;Margarita Engle&#39;,
+ &#39;Quan Barry&#39;,
+ &#39;Quan Barry&#39;,
+ &#39;Quan Barry&#39;,
+ &#39;Quan Barry&#39;,
+ &#39;Quan Barry&#39;,
+ &#39;Quan Barry&#39;,
+ &#39;Quan Barry&#39;,
+ &#39;Quan Barry&#39;,
+ &#39;Quan Barry&#39;,
+ &#39;Quan Barry&#39;,
+ &#39;James Masao Mitsui&#39;,
+ &#39;James Masao Mitsui&#39;,
+ &#39;James Masao Mitsui&#39;,
+ &#39;James Masao Mitsui&#39;,
+ &#39;James Masao Mitsui&#39;,
+ &#39;Rick Noguchi&#39;,
+ &#39;Rick Noguchi&#39;,
+ &#39;Rick Noguchi&#39;,
+ &#39;Rick Noguchi&#39;,
+ &#39;Robert Wrigley&#39;,
+ &#39;Adrian Matejka&#39;,
+ &#39;Adrian Matejka&#39;,
+ &#39;Adrian Matejka&#39;,
+ &#39;Osip Mandelstam&#39;,
+ &#39;Osip Mandelstam&#39;,
+ &#39;Osip Mandelstam&#39;,
+ &#39;Osip Mandelstam&#39;,
+ &#39;Osip Mandelstam&#39;,
+ &#39;Osip Mandelstam&#39;,
+ &#39;Juliet Kono&#39;,
+ &#39;Juliet Kono&#39;,
+ &#39;Juliet Kono&#39;,
+ &#39;Juliet Kono&#39;,
+ &#39;Naomi Shihab Nye&#39;,
+ &#39;Shin Yu Pai&#39;,
+ &#39;Shin Yu Pai&#39;,
+ &#39;Shin Yu Pai&#39;,
+ &#39;Shin Yu Pai&#39;,
+ &#39;Sueyeun Juliette Lee&#39;,
+ &#39;Sueyeun Juliette Lee&#39;,
+ &#39;Sueyeun Juliette Lee&#39;,
+ &#39;Christina Pugh&#39;,
+ &#39;Christina Pugh&#39;,
+ &#39;Cathy Linh Che&#39;,
+ &#39;Cathy Linh Che&#39;,
+ &#39;Cathy Linh Che&#39;,
+ &#39;Cathy Linh Che&#39;,
+ &#39;Eric Gamalinda&#39;,
+ &#39;Eric Gamalinda&#39;,
+ &#39;Eric Gamalinda&#39;,
+ &#39;Eric Gamalinda&#39;,
+ &#39;Aracelis Girmay&#39;,
+ &#39;Aracelis Girmay&#39;,
+ &#39;Aracelis Girmay&#39;,
+ &#39;Sandra Lim&#39;,
+ &#39;Sandra Lim&#39;,
+ &#39;Sandra Lim&#39;,
+ &#39;Sandra Lim&#39;,
+ &#39;Ha Jin&#39;,
+ &#39;Bei Dao&#39;,
+ &#39;Bei Dao&#39;,
+ &#39;Bei Dao&#39;,
+ &#39;Sarah Gambito&#39;,
+ &#39;Sarah Gambito&#39;,
+ &#39;Sarah Gambito&#39;,
+ &#39;Sun Yung Shin&#39;,
+ &#39;Sun Yung Shin&#39;,
+ &#39;Sun Yung Shin&#39;,
+ &#39;Sun Yung Shin&#39;,
+ &#39;Sun Yung Shin&#39;,
+ &#39;Sun Yung Shin&#39;,
+ &#39;April Ossmann&#39;,
+ &#39;April Ossmann&#39;,
+ &#39;April Ossmann&#39;,
+ &#39;Thomas Centolella&#39;,
+ &#39;Thomas Centolella&#39;,
+ &#39;Thomas Centolella&#39;,
+ &#39;Thomas Centolella&#39;,
+ &#39;Thomas Centolella&#39;,
+ &#39;Thomas Centolella&#39;,
+ &#39;Thomas Centolella&#39;,
+ &#39;Jaswinder Bolina&#39;,
+ &#39;Jaswinder Bolina&#39;,
+ &#39;Jaswinder Bolina&#39;,
+ &#39;Gerard Malanga&#39;,
+ &#39;Amanda Nadelberg&#39;,
+ &#39;Eileen R. Tabios&#39;,
+ &#39;Sunnylyn Thibodeaux&#39;,
+ &#39;Nikki Wallschlaeger&#39;,
+ &#39;Francisco Aragón&#39;,
+ &#39;Sara Deniz Akant&#39;,
+ &#39;Craig Morgan Teicher&#39;,
+ &#39;Dan Vera&#39;,
+ &#39;Dan Vera&#39;,
+ &#39;Dan Vera&#39;,
+ &#39;Dan Vera&#39;,
+ &quot;T&#39;ai Freedom Ford&quot;,
+ &quot;T&#39;ai Freedom Ford&quot;,
+ &quot;T&#39;ai Freedom Ford&quot;,
+ &quot;T&#39;ai Freedom Ford&quot;,
+ &#39;William Trowbridge&#39;,
+ &#39;William Trowbridge&#39;,
+ &#39;Douglas Manuel&#39;,
+ &#39;Douglas Manuel&#39;,
+ &#39;Douglas Manuel&#39;,
+ &#39;Douglas Manuel&#39;,
+ &#39;Diane Gilliam Fisher&#39;,
+ &#39;Diane Gilliam Fisher&#39;,
+ &#39;Diane Gilliam Fisher&#39;,
+ &#39;Thomas Centolella&#39;,
+ &#39;Thomas Centolella&#39;,
+ &#39;Thomas Centolella&#39;,
+ &#39;Cynthia Hogue&#39;,
+ &#39;Cynthia Hogue&#39;,
+ &#39;Cynthia Hogue&#39;,
+ &#39;Phillis Wheatley&#39;,
+ &#39;Cynthia Zarin&#39;,
+ &#39;Cynthia Zarin&#39;,
+ &#39;Cynthia Zarin&#39;,
+ &#39;Jill Bialosky&#39;,
+ &#39;Jill Bialosky&#39;,
+ &#39;Jill Bialosky&#39;,
+ &#39;Andrew Motion&#39;,
+ &#39;Andrew Motion&#39;,
+ &#39;Andrew Motion&#39;,
+ &#39;Andrew Motion&#39;,
+ &#39;Andrew Motion&#39;,
+ &#39;Koon Woon&#39;,
+ &#39;Koon Woon&#39;,
+ &#39;Koon Woon&#39;,
+ &#39;Koon Woon&#39;,
+ &quot;Mari L&#39;Esperance&quot;,
+ &quot;Mari L&#39;Esperance&quot;,
+ &quot;Mari L&#39;Esperance&quot;,
+ &quot;Mari L&#39;Esperance&quot;,
+ &#39;Anthony Madrid&#39;,
+ &#39;Anthony Madrid&#39;,
+ &#39;Anthony Madrid&#39;,
+ &#39;Veronica Forrest-Thomson&#39;,
+ &#39;Veronica Forrest-Thomson&#39;,
+ &#39;Veronica Forrest-Thomson&#39;,
+ &#39;Veronica Forrest-Thomson&#39;,
+ &#39;Jill Bialosky&#39;,
+ &#39;Dorianne Laux&#39;,
+ &#39;Shara McCallum&#39;,
+ &#39;Grace Cavalieri&#39;,
+ &#39;Pattiann Rogers&#39;,
+ &#39;JoAnn Balingit&#39;,
+ &#39;Martin Carter&#39;,
+ &#39;Jennifer Rahim&#39;,
+ &#39;erica lewis&#39;,
+ &#39;Vincent Katz&#39;,
+ &#39;Hoa Nguyen&#39;,
+ &#39;Julien Poirier&#39;,
+ &#39;Joshua Edwards&#39;,
+ &#39;Sueyeun Juliette Lee&#39;,
+ &#39;Jill Magi&#39;,
+ &#39;Joseph Hutchison&#39;,
+ &#39;Wesley McNair&#39;,
+ &#39;Marge Piercy&#39;,
+ &#39;Leslie Harrison&#39;,
+ &#39;Leslie Harrison&#39;,
+ &#39;Leslie Harrison&#39;,
+ &#39;Leslie Harrison&#39;,
+ &#39;Carmen Bernier-Grand&#39;,
+ &#39;Nancy Willard&#39;,
+ &#39;Fleda Brown&#39;,
+ &#39;Christine Stewart-Nuñez&#39;,
+ &#39;James Crews&#39;,
+ &#39;Kim Addonizio&#39;,
+ &#39;Pat Schneider&#39;,
+ &#39;Connie Wanek&#39;,
+ &#39;Marjorie Saiser&#39;,
+ &#39;Peter Everwine&#39;,
+ &#39;Brenda Coultas&#39;,
+ &#39;Marie Buck&#39;,
+ &#39;Matthew Zapruder&#39;,
+ &#39;Ben Fama&#39;,
+ &#39;Eleni Sikelianos&#39;,
+ &#39;Sandra Lim&#39;,
+ &#39;Sandra Lim&#39;,
+ &#39;Sandra Lim&#39;,
+ &#39;Daniel Nadler&#39;,
+ &#39;Daniel Nadler&#39;,
+ &#39;Daniel Nadler&#39;,
+ &#39;Harryette Mullen&#39;,
+ &quot;Mary O&#39;Donnell&quot;,
+ &quot;Mary O&#39;Donnell&quot;,
+ &#39;Anna Rabinowitz&#39;,
+ &#39;Anna Rabinowitz&#39;,
+ &#39;Tracy K. Smith&#39;,
+ &#39;Mina Loy&#39;,
+ &#39;Joanna Klink&#39;,
+ &#39;David Shook&#39;,
+ &#39;Jennifer Firestone&#39;,
+ &#39;Emily Skillings&#39;,
+ &#39;Kit Robinson&#39;,
+ &#39;Vi Khi Nao&#39;,
+ &#39;Johannes Göransson&#39;,
+ &#39;Aimee Nezhukumatathil&#39;,
+ &#39;Aimee Nezhukumatathil&#39;,
+ &#39;Aimee Nezhukumatathil&#39;,
+ &#39;Aimee Nezhukumatathil&#39;,
+ &#39;Elizabeth Barrett Browning&#39;,
+ &#39;Elizabeth Barrett Browning&#39;,
+ &#39;Elizabeth Barrett Browning&#39;,
+ &#39;Aziza Barnes&#39;,
+ &#39;Aziza Barnes&#39;,
+ &#39;Aziza Barnes&#39;,
+ &#39;Jill Bialosky&#39;,
+ &#39;Naomi Replansky&#39;,
+ &#39;Naomi Replansky&#39;,
+ &#39;Terrance Hayes&#39;,
+ &#39;Terrance Hayes&#39;,
+ &#39;Terrance Hayes&#39;,
+ &#39;Teresa Mei Chuc&#39;,
+ &#39;Teresa Mei Chuc&#39;,
+ &#39;Teresa Mei Chuc&#39;,
+ &#39;Teresa Mei Chuc&#39;,
+ &#39;Margaret Hasse&#39;,
+ &#39;Margaret Hasse&#39;,
+ &#39;Margaret Hasse&#39;,
+ &#39;Margaret Hasse&#39;,
+ &#39;W. Todd Kaneko&#39;,
+ &#39;W. Todd Kaneko&#39;,
+ &#39;W. Todd Kaneko&#39;,
+ &#39;Tami Haaland&#39;,
+ &#39;Heid E. Erdrich&#39;,
+ &#39;Aimee Nezhukumatathil&#39;,
+ &#39;Aimee Nezhukumatathil&#39;,
+ &#39;Aimee Nezhukumatathil&#39;,
+ &#39;Jonterri Gadson&#39;,
+ &#39;Jonterri Gadson&#39;,
+ &#39;Jonterri Gadson&#39;,
+ &#39;Jonterri Gadson&#39;,
+ &#39;Teresa Mei Chuc&#39;,
+ &#39;Teresa Mei Chuc&#39;,
+ &#39;Teresa Mei Chuc&#39;,
+ &#39;Darren Sardelli&#39;,
+ &#39;Darren Sardelli&#39;,
+ &#39;Darren Sardelli&#39;,
+ &#39;Darren Sardelli&#39;,
+ &#39;Darren Sardelli&#39;,
+ &#39;Thomas R. Moore&#39;,
+ &#39;Dorianne Laux&#39;,
+ &#39;Terri Kirby Erickson&#39;,
+ &#39;Mark Rudman&#39;,
+ &#39;Mark Rudman&#39;,
+ &#39;Randall Horton&#39;,
+ &#39;Sueyeun Juliette Lee&#39;,
+ &#39;Sueyeun Juliette Lee&#39;,
+ &#39;Sueyeun Juliette Lee&#39;,
+ &#39;Mark Rudman&#39;,
+ &#39;Rodney Koeneke&#39;,
+ &#39;Kenyatta Rogers&#39;,
+ &#39;James Hoch&#39;,
+ &#39;Matthew Dickman&#39;,
+ &#39;Matthew Dickman&#39;,
+ &#39;Divya Victor&#39;,
+ &#39;Divya Victor&#39;,
+ &#39;Divya Victor&#39;,
+ &#39;Jeffrey Harrison&#39;,
+ &#39;Jeff Derksen&#39;,
+ &#39;Bruce Guernsey&#39;,
+ &#39;James Crews&#39;,
+ &#39;Maggie Smith&#39;,
+ &#39;Maggie Smith&#39;,
+ &#39;Maggie Smith&#39;,
+ &#39;Maggie Smith&#39;,
+ &#39;Aleida Rodríguez&#39;,
+ &#39;Aleida Rodríguez&#39;,
+ &#39;Aleida Rodríguez&#39;,
+ &#39;Aleida Rodríguez&#39;,
+ &#39;Angela C. Trudell Vasquez&#39;,
+ &#39;Angela C. Trudell Vasquez&#39;,
+ &#39;John Ashbery&#39;,
+ &#39;Lesley Harrison&#39;,
+ &#39;Lesley Harrison&#39;,
+ &#39;Lesley Harrison&#39;,
+ &#39;Christina Rossetti&#39;,
+ &#39;Christina Rossetti&#39;,
+ &#39;Christina Rossetti&#39;,
+ &#39;Christina Rossetti&#39;,
+ &#39;Christina Rossetti&#39;,
+ &#39;Christina Rossetti&#39;,
+ &#39;Luljeta Lleshanaku&#39;,
+ &#39;Luljeta Lleshanaku&#39;,
+ &#39;Luljeta Lleshanaku&#39;,
+ &#39;Luljeta Lleshanaku&#39;,
+ &#39;Christopher Soto&#39;,
+ &#39;Melvin Dixon&#39;,
+ &#39;Anthony Carelli&#39;,
+ &#39;Solomon Ibn Gabirol&#39;,
+ &#39;Solomon Ibn Gabirol&#39;,
+ &#39;Yehudah Halevi&#39;,
+ &#39;Moses ibn Ezra&#39;,
+ &#39;Christian Wiman&#39;,
+ &#39;Jen Hofer&#39;,
+ &#39;Jen Hofer&#39;,
+ &#39;Luljeta Lleshanaku&#39;,
+ &#39;Luljeta Lleshanaku&#39;,
+ &#39;Christian Wiman&#39;,
+ &#39;Sean Thomas Dougherty&#39;,
+ &#39;Sean Thomas Dougherty&#39;,
+ &#39;Rebecca Morgan Frank&#39;,
+ &#39;Rebecca Morgan Frank&#39;,
+ &#39;Rebecca Morgan Frank&#39;,
+ &#39;Christian Wiman&#39;,
+ &#39;Joshua Edwards&#39;,
+ &#39;Joshua Edwards&#39;,
+ &#39;Joshua Edwards&#39;,
+ &#39;TC Tolbert&#39;,
+ &#39;TC Tolbert&#39;,
+ &#39;TC Tolbert&#39;,
+ &#39;Chrystos&#39;,
+ &#39;Chrystos&#39;,
+ &#39;Angela C. Trudell Vasquez&#39;,
+ &#39;Angela C. Trudell Vasquez&#39;,
+ &#39;Alli Warren&#39;,
+ &#39;Alli Warren&#39;,
+ &#39;Alli Warren&#39;,
+ &#39;Kiki Petrosino&#39;,
+ &#39;Kiki Petrosino&#39;,
+ &#39;Kiki Petrosino&#39;,
+ &#39;Levi Romero&#39;,
+ &#39;Levi Romero&#39;,
+ &#39;Greg Delanty&#39;,
+ &#39;Greg Delanty&#39;,
+ &#39;Joseph Di Prisco&#39;,
+ &#39;Joseph Di Prisco&#39;,
+ &#39;Joseph Di Prisco&#39;,
+ &#39;Joseph Di Prisco&#39;,
+ &#39;Elizabeth A.I. Powell&#39;,
+ &#39;Elizabeth A.I. Powell&#39;,
+ &#39;Elizabeth A.I. Powell&#39;,
+ &#39;Alurista&#39;,
+ &#39;Alurista&#39;,
+ &#39;Wesley McNair&#39;,
+ &#39;Wesley McNair&#39;,
+ &#39;Wesley McNair&#39;,
+ &#39;Joseph Massey&#39;,
+ &#39;Joseph Massey&#39;,
+ &#39;Joseph Massey&#39;,
+ &#39;Karen Volkman&#39;,
+ &#39;Karen Volkman&#39;,
+ &#39;Anna Marie Sewell&#39;,
+ &#39;Greg Delanty&#39;,
+ &#39;Gillian Conoley&#39;,
+ &#39;Ryo Yamaguchi&#39;,
+ &#39;Jack Kerouac&#39;,
+ &#39;Jack Kerouac&#39;,
+ &#39;Jack Kerouac&#39;,
+ &#39;Chinua Achebe&#39;,
+ &#39;Chinua Achebe&#39;,
+ &#39;Chinua Achebe&#39;,
+ &#39;Jennifer Wong&#39;,
+ &#39;Jennifer Wong&#39;,
+ &#39;Jennifer Wong&#39;,
+ &#39;Daniel Poppick&#39;,
+ &#39;Kazim Ali&#39;,
+ &#39;Carrie Olivia Adams&#39;,
+ &#39;Emily Hunt&#39;,
+ &#39;Laura Marie Marciano&#39;,
+ &#39;Alan Felsenthal&#39;,
+ &#39;Evie Shockley&#39;,
+ &#39;Evie Shockley&#39;,
+ &#39;Evie Shockley&#39;,
+ &quot;Laura Da&#39;&quot;,
+ &quot;Laura Da&#39;&quot;,
+ &#39;Gwen Nell Westerman&#39;,
+ &#39;Kathryn Nuernberger&#39;,
+ &#39;Kathryn Nuernberger&#39;,
+ &#39;Kathryn Nuernberger&#39;,
+ &#39;Ruben Quesada&#39;,
+ &#39;Ruben Quesada&#39;,
+ &#39;Ruben Quesada&#39;,
+ &#39;M.L. Smoker&#39;,
+ &#39;Patricia Smith&#39;,
+ &#39;Patricia Smith&#39;,
+ &#39;Patricia Smith&#39;,
+ &#39;Tim Seibles&#39;,
+ &#39;Tim Seibles&#39;,
+ &#39;Tim Seibles&#39;,
+ &#39;Eric Gansworth&#39;,
+ &#39;M.L. Smoker&#39;,
+ &#39;Michael Klein&#39;,
+ &#39;Robert Hass&#39;,
+ &#39;Julian Talamantez Brolaski&#39;,
+ &#39;Jack Agüeros&#39;,
+ &#39;Jack Agüeros&#39;,
+ &#39;dg nanouk okpik&#39;,
+ &#39;dg nanouk okpik&#39;,
+ &#39;dg nanouk okpik&#39;,
+ &#39;Wendy Xu&#39;,
+ &#39;Wendy Xu&#39;,
+ &#39;Wendy Xu&#39;,
+ &#39;Fady Joudah&#39;,
+ &#39;Linda Rodriguez&#39;,
+ &#39;Linda Rodriguez&#39;,
+ &#39;Linda Rodriguez&#39;,
+ &#39;Linda Rodriguez&#39;,
+ &#39;Linda Rodriguez&#39;,
+ &#39;Luis J. Rodríguez&#39;,
+ &#39;Luis J. Rodríguez&#39;,
+ &#39;Luis J. Rodríguez&#39;,
+ &#39;Nick Arnold&#39;,
+ &#39;Karenne Wood&#39;,
+ &#39;Karenne Wood&#39;,
+ &#39;Karenne Wood&#39;,
+ &#39;Levi Romero&#39;,
+ &#39;Levi Romero&#39;,
+ &#39;Janice Gould&#39;,
+ &#39;Janice Gould&#39;,
+ &#39;Janice Gould&#39;,
+ &#39;Luci Tapahonso&#39;,
+ &#39;Luci Tapahonso&#39;,
+ &#39;Luci Tapahonso&#39;,
+ &#39;Brenda Hillman&#39;,
+ &#39;Brenda Hillman&#39;,
+ &#39;Brenda Hillman&#39;,
+ &#39;Adam Clay&#39;,
+ &#39;Janice Gould&#39;,
+ &#39;Adam Clay&#39;,
+ &#39;Adam Clay&#39;,
+ &#39;Eduardo Chirinos&#39;,
+ &#39;Eduardo Chirinos&#39;,
+ &#39;Eduardo Chirinos&#39;,
+ &#39;elena minor&#39;,
+ &#39;elena minor&#39;,
+ &#39;Olivia Maciel&#39;,
+ &#39;Olivia Maciel&#39;,
+ &#39;Olivia Maciel&#39;,
+ &#39;Dunya Mikhail&#39;,
+ &#39;Dunya Mikhail&#39;,
+ &#39;Dunya Mikhail&#39;,
+ &#39;Amy Gerstler&#39;,
+ &#39;Amy Gerstler&#39;,
+ &#39;Amy Gerstler&#39;,
+ &#39;Jack Agüeros&#39;,
+ &#39;Jack Agüeros&#39;,
+ &#39;Jack Agüeros&#39;,
+ &#39;Robert Morgan&#39;,
+ &#39;Robert Morgan&#39;,
+ &#39;Jehanne Dubrow&#39;,
+ &#39;Tatiana de la Tierra&#39;,
+ &#39;Audre Lorde&#39;,
+ &#39;Donna Masini&#39;,
+ &#39;Donna Masini&#39;,
+ &#39;Donna Masini&#39;,
+ &#39;Donna Masini&#39;,
+ &#39;James K. Zimmerman&#39;,
+ &#39;Terri Kirby Erickson&#39;,
+ &#39;Betty Adcock&#39;,
+ &#39;Marilyn Singer&#39;,
+ &#39;Marilyn Singer&#39;,
+ &#39;Juan Felipe Herrera&#39;,
+ &#39;Jameson Fitzpatrick&#39;,
+ &#39;Ron Rash&#39;,
+ &#39;Ron Rash&#39;,
+ &#39;Ron Rash&#39;,
+ &#39;Marilyn Dumont&#39;,
+ &#39;Gordon Henry Jr.&#39;,
+ &#39;Noah Warren&#39;,
+ &#39;Janet McAdams&#39;,
+ &#39;Janet McAdams&#39;,
+ &#39;Tacey M. Atsitty&#39;,
+ &#39;Merrill Leffler&#39;,
+ &#39;Merrill Leffler&#39;,
+ &#39;Saundra Rose Maley&#39;,
+ &#39;Margaret Hasse&#39;,
+ &#39;Sy Hoahwah&#39;,
+ &#39;Cedar Sigo&#39;,
+ &#39;Sandra Simpson&#39;,
+ &#39;Saundra Rose Maley&#39;,
+ &#39;Philip Raisor&#39;,
+ &#39;Philip Raisor&#39;,
+ &#39;Raina J. León&#39;,
+ &#39;Raina J. León&#39;,
+ &#39;Raina J. León&#39;,
+ &#39;Karenne Wood&#39;,
+ &#39;Karenne Wood&#39;,
+ &#39;Karenne Wood&#39;,
+ &#39;Karenne Wood&#39;,
+ &#39;Megan Snyder-Camp&#39;,
+ &#39;Megan Snyder-Camp&#39;,
+ &#39;David Hernandez&#39;,
+ &#39;Cathy Tagnak Rexford&#39;,
+ &#39;Cathy Tagnak Rexford&#39;,
+ &#39;David Hernandez&#39;,
+ &#39;David Hernandez&#39;,
+ &#39;Peter Oresick&#39;,
+ &#39;Peter Oresick&#39;,
+ &#39;Peter Oresick&#39;,
+ &#39;Margaret Hasse&#39;,
+ &#39;Margaret Hasse&#39;,
+ &#39;Margaret Hasse&#39;,
+ &#39;Alejandra Pizarnik&#39;,
+ &#39;Peter Oresick&#39;,
+ &#39;Alejandra Pizarnik&#39;,
+ &#39;Ted Kooser&#39;,
+ &#39;Carol V. Davis&#39;,
+ &#39;Tami Haaland&#39;,
+ &#39;William Archila&#39;,
+ &#39;William Archila&#39;,
+ &#39;William Archila&#39;,
+ &#39;Deena Metzger&#39;,
+ &#39;Deena Metzger&#39;,
+ &#39;Deena Metzger&#39;,
+ &#39;Deena Metzger&#39;,
+ &#39;Tracy K. Smith&#39;,
+ &#39;Deena Metzger&#39;,
+ &#39;Tracy K. Smith&#39;,
+ &#39;Tracy K. Smith&#39;,
+ &#39;Tracy K. Smith&#39;,
+ &#39;Tracy K. Smith&#39;,
+ &#39;Tracy K. Smith&#39;,
+ &#39;Stephanie Burt&#39;,
+ &#39;Stephanie Burt&#39;,
+ &#39;Stephanie Burt&#39;,
+ &#39;Stephanie Burt&#39;,
+ &#39;Matthea Harvey&#39;,
+ &#39;Matthea Harvey&#39;,
+ &#39;Jenny Xie&#39;,
+ &#39;Jenny Xie&#39;,
+ &#39;Jenny Xie&#39;,
+ &#39;Ada Limón&#39;,
+ &#39;Ada Limón&#39;,
+ &#39;Ada Limón&#39;,
+ &#39;Ada Limón&#39;,
+ &#39;Ada Limón&#39;,
+ &#39;Robert Hedin&#39;,
+ &#39;Richard Jones&#39;,
+ &#39;Richard Jones&#39;,
+ &#39;Richard Jones&#39;,
+ &#39;Richard Jones&#39;,
+ &#39;Richard Jones&#39;,
+ &#39;Richard Jones&#39;,
+ &#39;Ghassan Zaqtan&#39;,
+ &#39;Ghassan Zaqtan&#39;,
+ &#39;Ghassan Zaqtan&#39;,
+ &#39;Ghassan Zaqtan&#39;,
+ &#39;Ghassan Zaqtan&#39;,
+ &#39;Olena Kalytiak Davis&#39;,
+ &#39;Olena Kalytiak Davis&#39;,
+ &#39;Olav H. Hauge&#39;,
+ &#39;Dag T. Straumsvåg&#39;,
+ &#39;Jenny George&#39;,
+ &#39;Jenny George&#39;,
+ &#39;Jenny George&#39;,
+ &#39;Melissa Stein&#39;,
+ &#39;Melissa Stein&#39;,
+ &#39;Melissa Stein&#39;,
+ &#39;David Budbill&#39;,
+ &#39;David Budbill&#39;,
+ &#39;David Budbill&#39;,
+ &#39;Bridget Talone&#39;,
+ &#39;Claudia La Rocco&#39;,
+ &#39;Meena Alexander&#39;,
+ &#39;Celina Su&#39;,
+ &#39;Hanif Abdurraqib&#39;,
+ &#39;Sophia Dahlin&#39;,
+ &#39;LeAnne Howe&#39;,
+ &#39;Maryann Corbett&#39;,
+ &#39;David Mason&#39;,
+ &#39;Samuel Green&#39;,
+ &#39;Etheridge Knight&#39;,
+ &#39;Etheridge Knight&#39;,
+ &#39;Emily Jungmin Yoon&#39;,
+ &#39;Emily Jungmin Yoon&#39;,
+ &#39;Emily Jungmin Yoon&#39;,
+ &#39;Emily Jungmin Yoon&#39;,
+ &#39;Langston Hughes&#39;,
+ &#39;Langston Hughes&#39;,
+ &#39;Pauli Murray&#39;,
+ &#39;Pauli Murray&#39;,
+ &#39;Pauli Murray&#39;,
+ &#39;Pauli Murray&#39;,
+ &#39;Adrian Koesters&#39;,
+ &#39;Kim Lozano&#39;,
+ &#39;Jim Daniels&#39;,
+ &#39;Toby Altman&#39;,
+ &#39;Ruben Quesada&#39;,
+ &#39;Brenda Hillman&#39;,
+ &#39;Ali Power&#39;,
+ &#39;Edmund Berrigan&#39;,
+ &#39;Lisa Wells&#39;,
+ &#39;Randall Mann&#39;,
+ &#39;Billy Collins&#39;,
+ &#39;Steve Sanfield&#39;,
+ &#39;G. Maria Hindmarch&#39;,
+ &#39;Tongo Eisen-Martin&#39;,
+ &#39;Mark Tardi&#39;,
+ &#39;John Ashbery&#39;,
+ &#39;Justin Phillip Reed&#39;,
+ &#39;Justin Phillip Reed&#39;,
+ &#39;Justin Phillip Reed&#39;,
+ &#39;Sir  Thomas Wyatt&#39;,
+ &#39;Charles Bernstein&#39;,
+ &#39;Mónica de la Torre&#39;,
+ &#39;Donika Kelly&#39;,
+ &#39;Kim Parko&#39;,
+ &#39;Diana Khoi Nguyen&#39;,
+ &#39;Gabriel Ojeda-Sague&#39;,
+ &#39;Julian Talamantez Brolaski&#39;,
+ &#39;Richard Blanco&#39;,
+ &#39;Ursula K. Le Guin&#39;,
+ &#39;Aase Berg&#39;,
+ &#39;Aase Berg&#39;,
+ &#39;Aase Berg&#39;,
+ &#39;Dan Gerber&#39;,
+ &#39;Sally Van Doren&#39;,
+ &#39;Ursula K. Le Guin&#39;,
+ &#39;Ursula K. Le Guin&#39;,
+ &#39;Bill Zavatsky&#39;,
+ &#39;Bill Zavatsky&#39;,
+ &#39;Bill Zavatsky&#39;,
+ &#39;Roberto Harrison&#39;,
+ &#39;Solmaz Sharif&#39;,
+ &#39;Natasha Trethewey&#39;,
+ &#39;Natasha Trethewey&#39;,
+ &#39;Natasha Trethewey&#39;,
+ &#39;Teresa Mei Chuc&#39;,
+ &#39;Teresa Mei Chuc&#39;,
+ &#39;William Carlos Williams&#39;,
+ &#39;William Carlos Williams&#39;,
+ &#39;William Carlos Williams&#39;,
+ &#39;William Carlos Williams&#39;,
+ &#39;William Carlos Williams&#39;,
+ &#39;William Carlos Williams&#39;,
+ &#39;D. H. Lawrence&#39;,
+ &#39;D. H. Lawrence&#39;,
+ &#39;D. H. Lawrence&#39;,
+ &#39;D. H. Lawrence&#39;,
+ &#39;D. H. Lawrence&#39;,
+ &#39;D. H. Lawrence&#39;,
+ &#39;Mina Loy&#39;,
+ &#39;Mina Loy&#39;,
+ &#39;Mina Loy&#39;,
+ &#39;Mina Loy&#39;,
+ &#39;Mina Loy&#39;,
+ &#39;Jean Toomer&#39;,
+ &#39;Jean Toomer&#39;,
+ &#39;Jean Toomer&#39;,
+ &#39;Jean Toomer&#39;,
+ &#39;E. E. Cummings&#39;,
+ &#39;E. E. Cummings&#39;,
+ &#39;E. E. Cummings&#39;,
+ &#39;E. E. Cummings&#39;,
+ &#39;Ryler Dustin&#39;,
+ &#39;Edna St. Vincent Millay&#39;,
+ &#39;Edna St. Vincent Millay&#39;,
+ &#39;Edna St. Vincent Millay&#39;,
+ &#39;Edna St. Vincent Millay&#39;,
+ &#39;Edna St. Vincent Millay&#39;,
+ &#39;Edna St. Vincent Millay&#39;,
+ &#39;Edna St. Vincent Millay&#39;,
+ &#39;Edna St. Vincent Millay&#39;,
+ &#39;Edna St. Vincent Millay&#39;,
+ &#39;Edna St. Vincent Millay&#39;,
+ &#39;Kahlil Gibran&#39;,
+ &#39;Kahlil Gibran&#39;,
+ &#39;Kahlil Gibran&#39;,
+ &#39;Kahlil Gibran&#39;,
+ &#39;Kahlil Gibran&#39;,
+ &#39;Kahlil Gibran&#39;,
+ &#39;Kahlil Gibran&#39;,
+ &#39;Kahlil Gibran&#39;,
+ &#39;Kahlil Gibran&#39;,
+ &#39;Nancy Miller Gomez&#39;,
+ &#39;Peggy Shumaker&#39;,
+ &#39;Larry Neal&#39;,
+ &#39;Joanna Klink&#39;,
+ &#39;Robert Frost&#39;,
+ &#39;Robert Frost&#39;,
+ &#39;Robert Frost&#39;,
+ &#39;Robert Frost&#39;,
+ &#39;Robert Frost&#39;,
+ &#39;Robert Frost&#39;,
+ &#39;Robert Frost&#39;,
+ &#39;Robert Frost&#39;,
+ &#39;Robert Frost&#39;,
+ &#39;Katy Lederer&#39;,
+ &#39;Rusty Morrison&#39;,
+ &#39;Stephanie Ellis Schlaifer&#39;,
+ &#39;Wallace Stevens&#39;,
+ &#39;Wallace Stevens&#39;,
+ &#39;Susan Eisenberg&#39;,
+ &#39;Susan Eisenberg&#39;,
+ &#39;Wallace Stevens&#39;,
+ &#39;Wallace Stevens&#39;,
+ &#39;Wallace Stevens&#39;,
+ &#39;Wallace Stevens&#39;,
+ &#39;Wallace Stevens&#39;,
+ &#39;Dante Di Stefano&#39;,
+ &#39;Judith Askew&#39;,
+ &#39;Richard Robbins&#39;,
+ &#39;Caitlin Doyle&#39;,
+ &#39;Anne Sexton&#39;,
+ &#39;bell hooks&#39;,
+ &#39;Liz Ahl&#39;,
+ &#39;Gerrit Lansing&#39;,
+ &#39;Gerrit Lansing&#39;,
+ &#39;Gerrit Lansing&#39;,
+ &#39;Louise Bogan&#39;,
+ &#39;Louise Bogan&#39;,
+ &#39;Louise Bogan&#39;,
+ &#39;Louise Bogan&#39;,
+ &#39;Louise Bogan&#39;,
+ &#39;Louise Bogan&#39;,
+ &#39;Louise Bogan&#39;,
+ &#39;Louise Bogan&#39;,
+ &#39;Louise Bogan&#39;,
+ &#39;George Sterling&#39;,
+ &#39;George Sterling&#39;,
+ &#39;George Sterling&#39;,
+ &#39;John Masefield&#39;,
+ &#39;George Sterling&#39;,
+ &#39;John Masefield&#39;,
+ &#39;John Masefield&#39;,
+ &#39;John Masefield&#39;,
+ &#39;Elisa Gabbert&#39;,
+ &#39;Marjorie Saiser&#39;,
+ &#39;John L. Stanizzi&#39;,
+ &#39;Richard Jarrette&#39;,
+ &#39;Pauletta Hansel&#39;,
+ &#39;Max Garland&#39;,
+ &#39;Jay Besemer&#39;,
+ &#39;Ntozake Shange&#39;,
+ &#39;Ntozake Shange&#39;,
+ &#39;Ntozake Shange&#39;,
+ &#39;Ntozake Shange&#39;,
+ &#39;Ntozake Shange&#39;,
+ &#39;Ntozake Shange&#39;,
+ &#39;Ntozake Shange&#39;,
+ &#39;Paul Martin&#39;,
+ &#39;Thomas Reiter&#39;,
+ &#39;Brian Lucas&#39;,
+ &#39;Jeanie Greensfelder&#39;,
+ &#39;Justin Phillip Reed&#39;,
+ &#39;Jessica Laser&#39;,
+ &#39;Chris Martin&#39;,
+ &#39;Peg Duthie&#39;,
+ &#39;Caitlin Doyle&#39;,
+ &#39;Mark Irwin&#39;,
+ &#39;Faith Shearin&#39;,
+ &#39;Kenneth Lee&#39;,
+ &#39;Peter Schneider&#39;,
+ &#39;Callie Garnett&#39;,
+ &#39;Ginger Ko&#39;,
+ &#39;Jasmine Gibson&#39;,
+ &#39;Katy Bohinc&#39;,
+ &#39;Chris Glomski&#39;,
+ &#39;Michael Lally&#39;,
+ &#39;Bruce Pemberton&#39;,
+ &#39;André Naffis-Sahely&#39;,
+ &#39;Austin Smith&#39;,
+ &#39;Geoffrey Hilsabeck&#39;,
+ &#39;Ntozake Shange&#39;,
+ &#39;Ntozake Shange&#39;,
+ &#39;Ntozake Shange&#39;,
+ &#39;Ron Koertge&#39;,
+ &#39;Jared Stanley&#39;,
+ &#39;Maureen Thorson&#39;,
+ &#39;Naomi Shihab Nye&#39;,
+ &#39;Naomi Shihab Nye&#39;,
+ &#39;Naomi Shihab Nye&#39;,
+ &#39;Naomi Shihab Nye&#39;,
+ &#39;Naomi Shihab Nye&#39;,
+ &#39;Lois Red Elk&#39;,
+ &#39;Lois Red Elk&#39;,
+ &#39;Lois Red Elk&#39;,
+ &#39;Ada Limón&#39;,
+ &#39;Sally Wen Mao&#39;,
+ &#39;Sally Wen Mao&#39;,
+ &#39;Sally Wen Mao&#39;,
+ &#39;Roberto Harrison&#39;,
+ &#39;Roberto Harrison&#39;,
+ &#39;Roberto Harrison&#39;,
+ &#39;Roberto Harrison&#39;,
+ &#39;Craig Santos Perez&#39;,
+ &#39;Diana Khoi Nguyen&#39;,
+ &#39;Diana Khoi Nguyen&#39;,
+ &#39;Diana Khoi Nguyen&#39;,
+ &#39;Eduardo Chirinos&#39;,
+ &#39;Eduardo Chirinos&#39;,
+ &#39;Simon Armitage&#39;,
+ &#39;Simon Armitage&#39;,
+ &#39;John Trudell&#39;,
+ &#39;John Trudell&#39;,
+ &#39;John Trudell&#39;,
+ &#39;John Trudell&#39;,
+ &#39;Craig Santos Perez&#39;,
+ &#39;Wisława Szymborska&#39;,
+ &#39;Cedar Sigo&#39;,
+ &#39;Elise Hempel&#39;,
+ &#39;Matthew Olzmann&#39;,
+ &#39;Pimone Triplett&#39;,
+ &#39;Pimone Triplett&#39;,
+ &#39;Pimone Triplett&#39;,
+ &#39;Layli Long Soldier&#39;,
+ &#39;Letitia Elizabeth Landon&#39;,
+ &#39;Letitia Elizabeth Landon&#39;,
+ &#39;Letitia Elizabeth Landon&#39;,
+ &#39;Kirsten Ihns&#39;,
+ &#39;Megan Arlett&#39;,
+ &#39;William Butler Yeats&#39;,
+ &#39;William Butler Yeats&#39;,
+ &#39;William Butler Yeats&#39;,
+ &#39;William Butler Yeats&#39;,
+ &#39;William Butler Yeats&#39;,
+ &#39;William Butler Yeats&#39;,
+ &#39;William Butler Yeats&#39;,
+ &#39;William Butler Yeats&#39;,
+ &#39;Geoffrey Chaucer&#39;,
+ &#39;Samuel Daniel&#39;,
+ &#39;Samuel Daniel&#39;,
+ &#39;Samuel Daniel&#39;,
+ &#39;Samuel Daniel&#39;,
+ &#39;Samuel Daniel&#39;,
+ &#39;Samuel Daniel&#39;,
+ &#39;Michael Drayton&#39;,
+ &#39;Michael Drayton&#39;,
+ &#39;Michael Drayton&#39;,
+ &#39;Michael Drayton&#39;,
+ &#39;Michael Drayton&#39;,
+ &#39;Michael Drayton&#39;,
+ &#39;Michael Drayton&#39;,
+ &#39;William Dunbar&#39;,
+ &#39;A. E. Housman&#39;,
+ &#39;John McCrae&#39;,
+ &#39;John Milton&#39;,
+ &#39;Thomas Love Peacock&#39;,
+ &#39;Thomas Love Peacock&#39;,
+ &#39;Thomas Love Peacock&#39;,
+ &#39;Alan Seeger&#39;,
+ &#39;Alan Seeger&#39;,
+ &#39;Alan Seeger&#39;,
+ &#39;Alan Seeger&#39;,
+ &#39;William Shakespeare&#39;,
+ &#39;John Skelton&#39;,
+ &#39;Charles Hamilton Sorley&#39;,
+ &#39;Robert Southey&#39;,
+ &#39;Robert Southey&#39;,
+ &#39;Robert Southey&#39;,
+ &#39;Robert Southey&#39;,
+ &#39;Robert Southey&#39;,
+ &#39;Henry Howard, Earl of Surrey&#39;,
+ &#39;Henry Howard, Earl of Surrey&#39;,
+ &#39;James Thomson (Bysshe Vanolis)&#39;,
+ &#39;John Milton&#39;,
+ &#39;John Milton&#39;,
+ &#39;John Milton&#39;,
+ &#39;John Milton&#39;,
+ &#39;John Milton&#39;,
+ &#39;John Milton&#39;,
+ &#39;John Milton&#39;,
+ &#39;Robert Browning&#39;,
+ &#39;Isabella Whitney&#39;,
+ &#39;Isabella Whitney&#39;,
+ &#39;Isabella Whitney&#39;,
+ &#39;Sandra M. Gilbert&#39;,
+ &#39;Julian Grenfell&#39;,
+ &#39;Francis Scott Key&#39;,
+ &#39;William Langland&#39;,
+ &#39;Vachel Lindsay&#39;,
+ &#39;John McCrae&#39;,
+ &#39;Charles Hamilton Sorley&#39;,
+ &#39;Charles Hamilton Sorley&#39;,
+ &#39;Charles Hamilton Sorley&#39;,
+ &#39;Charles Hamilton Sorley&#39;,
+ &#39;Wallace Stevens&#39;,
+ &#39;Emily Dickinson&#39;,
+ &#39;Carl Phillips&#39;,
+ &#39;John Frederick Nims&#39;,
+ &#39;Mina Loy&#39;,
+ &#39;Grace Paley&#39;,
+ &#39;A. R. Ammons&#39;,
+ &#39;Barbara Guest&#39;,
+ &#39;Wallace Stevens&#39;,
+ &#39;Charles Wright&#39;,
+ &#39;William Butler Yeats&#39;,
+ &#39;Lizette Woodworth Reese&#39;,
+ &#39;Gregory Orr&#39;,
+ &#39;Rupert Brooke&#39;,
+ &#39;Harriet Monroe&#39;,
+ &#39;M.L. Smoker&#39;,
+ &#39;Joy Harjo&#39;,
+ &#39;Sean Nevin&#39;,
+ &#39;Rita Dove&#39;,
+ &#39;Rita Dove&#39;,
+ &#39;Patricia Goedicke&#39;,
+ &#39;Gerald Fleming&#39;,
+ &#39;Miller Williams&#39;,
+ &#39;Joseph O. Legaspi&#39;,
+ &#39;Robert Duncan&#39;,
+ &#39;Esther Belin&#39;,
+ &#39;Carl Marcum&#39;,
+ &#39;Carter Revard&#39;,
+ &#39;Adrienne Rich&#39;,
+ &#39;Ray Gonzalez&#39;,
+ &#39;Ray Gonzalez&#39;,
+ &#39;Ray Gonzalez&#39;,
+ &#39;Ray Gonzalez&#39;,
+ &#39;Thylias Moss&#39;,
+ &#39;Allen Ginsberg&#39;,
+ &#39;Gabriel Gomez&#39;,
+ &#39;Gabriel Gomez&#39;,
+ &#39;Gabriel Gomez&#39;,
+ &#39;Paul Martínez Pompa&#39;,
+ &#39;Paul Martínez Pompa&#39;,
+ &#39;Paul Martínez Pompa&#39;,
+ &#39;Pimone Triplett&#39;,
+ &#39;Pimone Triplett&#39;,
+ &#39;Pimone Triplett&#39;,
+ &#39;Rachel Loden&#39;,
+ &#39;Lewis Warsh&#39;,
+ &#39;Lewis Warsh&#39;,
+ &#39;Lewis Warsh&#39;,
+ &#39;Joan Retallack&#39;,
+ &#39;Jena Osman&#39;,
+ &#39;Keith Waldrop&#39;,
+ &#39;Keith Waldrop&#39;,
+ &#39;Keith Waldrop&#39;,
+ &#39;Rosmarie Waldrop&#39;,
+ &#39;Rosmarie Waldrop&#39;,
+ &#39;Carl Phillips&#39;,
+ &#39;Mohja Kahf&#39;,
+ &#39;Kazim Ali&#39;,
+ &#39;Khaled Mattawa&#39;,
+ &#39;Khaled Mattawa&#39;,
+ &#39;Khaled Mattawa&#39;,
+ &#39;Khaled Mattawa&#39;,
+ &#39;Kazim Ali&#39;,
+ &#39;Samuel Hazo&#39;,
+ &#39;Thylias Moss&#39;,
+ &#39;Grace Cavalieri&#39;,
+ &#39;David Elliott&#39;,
+ &#39;Betsy Franco&#39;,
+ &#39;Bruce Guernsey&#39;,
+ &#39;Leslie Bulion&#39;,
+ &#39;Susan M. Schultz&#39;,
+ &#39;Yehuda Amichai&#39;,
+ &#39;Naomi Shihab Nye&#39;,
+ &#39;Matthew Zapruder&#39;,
+ &#39;Matthew Zapruder&#39;,
+ &#39;Matthew Zapruder&#39;,
+ &#39;Matthew Zapruder&#39;,
+ &#39;Taha Muhammad Ali&#39;,
+ &#39;Taha Muhammad Ali&#39;,
+ &#39;Taha Muhammad Ali&#39;,
+ &#39;Timothy Donnelly&#39;,
+ &#39;Timothy Donnelly&#39;,
+ &#39;Timothy Donnelly&#39;,
+ &#39;Timothy Donnelly&#39;,
+ &#39;Naomi Shihab Nye&#39;,
+ &#39;Frannie Lindsay&#39;,
+ &#39;Charles Olson&#39;,
+ &#39;Charles Olson&#39;,
+ ...]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">json</span>
+
+<span class="n">metadata</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Poet&quot;</span><span class="p">]:</span>
+    <span class="n">Poet</span> <span class="o">=</span> <span class="n">Poets</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">Poet_lower</span> <span class="o">=</span> <span class="n">Poet</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+    <span class="n">final_poet</span> <span class="o">=</span> <span class="n">Poet_lower</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;-&quot;</span> <span class="o">+</span> <span class="n">Poet_lower</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">base_url</span> <span class="o">=</span> <span class="s2">&quot;https://www.poetryfoundation.org/poets/&quot;</span>
+    <span class="n">final_url</span> <span class="o">=</span> <span class="n">base_url</span> <span class="o">+</span> <span class="n">final_poet</span>
+    <span class="n">source_code</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">final_url</span><span class="p">)</span>
+    <span class="n">plain_text</span> <span class="o">=</span> <span class="n">source_code</span><span class="o">.</span><span class="n">text</span>
+    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">plain_text</span><span class="p">)</span>
+    <span class="n">birthday_raw</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;span&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;class&quot;</span><span class="p">:</span><span class="s2">&quot;c-txt c-txt_poetMeta&quot;</span><span class="p">})</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">birthday_raw</span><span class="p">)</span>
+   
+ 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>None
+None
+&lt;span class=&quot;c-txt c-txt_poetMeta&quot;&gt;b. 1939&lt;/span&gt;
+&lt;span class=&quot;c-txt c-txt_poetMeta&quot;&gt;b. 1932&lt;/span&gt;
+&lt;span class=&quot;c-txt c-txt_poetMeta&quot;&gt;b. 1952&lt;/span&gt;
+None
+&lt;span class=&quot;c-txt c-txt_poetMeta&quot;&gt;b. 1951&lt;/span&gt;
+&lt;span class=&quot;c-txt c-txt_poetMeta&quot;&gt;b. 1951&lt;/span&gt;
+&lt;span class=&quot;c-txt c-txt_poetMeta&quot;&gt;1927–2017&lt;/span&gt;
+None
+None
+None
+None
+None
+None
+None
+&lt;span class=&quot;c-txt c-txt_poetMeta&quot;&gt;b. 1969&lt;/span&gt;
+&lt;span class=&quot;c-txt c-txt_poetMeta&quot;&gt;b. 1969&lt;/span&gt;
+&lt;span class=&quot;c-txt c-txt_poetMeta&quot;&gt;b. 1949&lt;/span&gt;
+&lt;span class=&quot;c-txt c-txt_poetMeta&quot;&gt;b. 1949&lt;/span&gt;
+</pre></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By David Birkenberger<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
